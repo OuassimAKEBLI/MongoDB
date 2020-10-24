@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_02435b8eb1814eaa90cd2102dcd4d4ae {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_02435b8eb1814eaa90cd2102dcd4d4ae" ></div>
+        
+</body>
+<script>    
+    
+            var map_02435b8eb1814eaa90cd2102dcd4d4ae = L.map(
+                "map_02435b8eb1814eaa90cd2102dcd4d4ae",
+                {
+                    center: [50.6292, 3.0573],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0b1b1c100050415a8ae7aac83ff7d927 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var marker_1a0c389fca364aabac2dc7c75cbd2772 = L.marker(
+                [50.6292, 3.0573],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_53d97c4031b34695a14a919de637e2cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1a0c389fca364aabac2dc7c75cbd2772.setIcon(icon_53d97c4031b34695a14a919de637e2cb);
+        
+    
+        var popup_1c39a9c86dce43eb9d05c8770eafa505 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6851d6303374542b484736751f78e63 = $(`<div id="html_d6851d6303374542b484736751f78e63" style="width: 100.0%; height: 100.0%;"><strong>User Position</strong></div>`)[0];
+            popup_1c39a9c86dce43eb9d05c8770eafa505.setContent(html_d6851d6303374542b484736751f78e63);
+        
+
+        marker_1a0c389fca364aabac2dc7c75cbd2772.bindPopup(popup_1c39a9c86dce43eb9d05c8770eafa505)
+        ;
+
+        
+    
+    
+            var marker_51f07340c33843e481ad04be3e188356 = L.marker(
+                [50.629044, 3.058288],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_58b5ac6c59eb486aa05ff6c7e8db572e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_51f07340c33843e481ad04be3e188356.setIcon(icon_58b5ac6c59eb486aa05ff6c7e8db572e);
+        
+    
+        var popup_de09ddd2116d4d29896e08adfa859d87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e720ba9c018477881910317d105bbc0 = $(`<div id="html_1e720ba9c018477881910317d105bbc0" style="width: 100.0%; height: 100.0%;"><strong>THEATRE SEBASTOPOL</strong></div>`)[0];
+            popup_de09ddd2116d4d29896e08adfa859d87.setContent(html_1e720ba9c018477881910317d105bbc0);
+        
+
+        marker_51f07340c33843e481ad04be3e188356.bindPopup(popup_de09ddd2116d4d29896e08adfa859d87)
+        ;
+
+        
+    
+    
+            var marker_f651f11f3eac46c9aaa82f94deae06b9 = L.marker(
+                [50.629063, 3.053711],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_4cc235c6f5b44efb9b37d123a5e81a83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f651f11f3eac46c9aaa82f94deae06b9.setIcon(icon_4cc235c6f5b44efb9b37d123a5e81a83);
+        
+    
+        var popup_fc99072ec0004a3a8bdf33f975710dd8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_707acec2a44e455c9410e1946c7c4e59 = $(`<div id="html_707acec2a44e455c9410e1946c7c4e59" style="width: 100.0%; height: 100.0%;"><strong>GAMBETTA UTRECHT</strong></div>`)[0];
+            popup_fc99072ec0004a3a8bdf33f975710dd8.setContent(html_707acec2a44e455c9410e1946c7c4e59);
+        
+
+        marker_f651f11f3eac46c9aaa82f94deae06b9.bindPopup(popup_fc99072ec0004a3a8bdf33f975710dd8)
+        ;
+
+        
+    
+    
+            var marker_abb858079a70484ea4e5e039ced0fd1f = L.marker(
+                [50.630943, 3.060299],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_716a6424dc75436ca2c510eca3bff7bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_abb858079a70484ea4e5e039ced0fd1f.setIcon(icon_716a6424dc75436ca2c510eca3bff7bb);
+        
+    
+        var popup_7d3fab8977f9489c88bbf2d6b64d2cce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8360edbdcbc2412daa257a1d73da7d6f = $(`<div id="html_8360edbdcbc2412daa257a1d73da7d6f" style="width: 100.0%; height: 100.0%;"><strong>REPUBLIQUE BEAUX ARTS</strong></div>`)[0];
+            popup_7d3fab8977f9489c88bbf2d6b64d2cce.setContent(html_8360edbdcbc2412daa257a1d73da7d6f);
+        
+
+        marker_abb858079a70484ea4e5e039ced0fd1f.bindPopup(popup_7d3fab8977f9489c88bbf2d6b64d2cce)
+        ;
+
+        
+    
+    
+            var marker_de3cdd91b3ee47dab2236ae5bc93887d = L.marker(
+                [50.62648, 3.056666],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_e927c37435ec473b8f8d318233a5937e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_de3cdd91b3ee47dab2236ae5bc93887d.setIcon(icon_e927c37435ec473b8f8d318233a5937e);
+        
+    
+        var popup_c9bb5d5a68da496b8acabfbfa951e2c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6bbc4d1c3b5402283b7b75cc95bf9bb = $(`<div id="html_b6bbc4d1c3b5402283b7b75cc95bf9bb" style="width: 100.0%; height: 100.0%;"><strong>BRULE MAISON</strong></div>`)[0];
+            popup_c9bb5d5a68da496b8acabfbfa951e2c1.setContent(html_b6bbc4d1c3b5402283b7b75cc95bf9bb);
+        
+
+        marker_de3cdd91b3ee47dab2236ae5bc93887d.bindPopup(popup_c9bb5d5a68da496b8acabfbfa951e2c1)
+        ;
+
+        
+    
+    
+            var marker_2f9c0d5215864432a15d33c6985b720c = L.marker(
+                [50.63156, 3.054738],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_71fbc4a4f8aa4906bac7c6158c9e5815 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2f9c0d5215864432a15d33c6985b720c.setIcon(icon_71fbc4a4f8aa4906bac7c6158c9e5815);
+        
+    
+        var popup_3adc1b5f651b4ee8b9bc5949d13b3148 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6cf194fd5e0b4ff1bbba2f65dd0f2c42 = $(`<div id="html_6cf194fd5e0b4ff1bbba2f65dd0f2c42" style="width: 100.0%; height: 100.0%;"><strong>MASSENA</strong></div>`)[0];
+            popup_3adc1b5f651b4ee8b9bc5949d13b3148.setContent(html_6cf194fd5e0b4ff1bbba2f65dd0f2c42);
+        
+
+        marker_2f9c0d5215864432a15d33c6985b720c.bindPopup(popup_3adc1b5f651b4ee8b9bc5949d13b3148)
+        ;
+
+        
+    
+    
+            var marker_c5040223d882446a85f0224fbb583c1a = L.marker(
+                [50.632367, 3.05816],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_05acb660611d4a5d9cb889559e2706be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c5040223d882446a85f0224fbb583c1a.setIcon(icon_05acb660611d4a5d9cb889559e2706be);
+        
+    
+        var popup_b2cdeb92d8bd437182c95c8e103035e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8bb5498b9b640a89c1d22318ed726ff = $(`<div id="html_c8bb5498b9b640a89c1d22318ed726ff" style="width: 100.0%; height: 100.0%;"><strong>JEAN SANS PEUR</strong></div>`)[0];
+            popup_b2cdeb92d8bd437182c95c8e103035e9.setContent(html_c8bb5498b9b640a89c1d22318ed726ff);
+        
+
+        marker_c5040223d882446a85f0224fbb583c1a.bindPopup(popup_b2cdeb92d8bd437182c95c8e103035e9)
+        ;
+
+        
+    
+    
+            var marker_0b1fb5c8fcf049eebc508c6d15c8e4ff = L.marker(
+                [50.627586, 3.061974],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_b5d3cfa5f223446eb43593beb790886d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0b1fb5c8fcf049eebc508c6d15c8e4ff.setIcon(icon_b5d3cfa5f223446eb43593beb790886d);
+        
+    
+        var popup_be34defcc3104c1bb4fa72239738e458 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9848a5a4783f4fd28e966112e5d5978a = $(`<div id="html_9848a5a4783f4fd28e966112e5d5978a" style="width: 100.0%; height: 100.0%;"><strong>PLACE PHILIPPE LEBON</strong></div>`)[0];
+            popup_be34defcc3104c1bb4fa72239738e458.setContent(html_9848a5a4783f4fd28e966112e5d5978a);
+        
+
+        marker_0b1fb5c8fcf049eebc508c6d15c8e4ff.bindPopup(popup_be34defcc3104c1bb4fa72239738e458)
+        ;
+
+        
+    
+    
+            var marker_f7d0ff30b5b14b0c848c801adc0300a8 = L.marker(
+                [50.62629, 3.061198],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_b0468f3814f94438bea7e5d1c88900f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f7d0ff30b5b14b0c848c801adc0300a8.setIcon(icon_b0468f3814f94438bea7e5d1c88900f4);
+        
+    
+        var popup_a13819bf23684d0f942f241f8f8b3135 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d949ea1ce6454751bddfdfe8c58c7c14 = $(`<div id="html_d949ea1ce6454751bddfdfe8c58c7c14" style="width: 100.0%; height: 100.0%;"><strong>ARTOIS</strong></div>`)[0];
+            popup_a13819bf23684d0f942f241f8f8b3135.setContent(html_d949ea1ce6454751bddfdfe8c58c7c14);
+        
+
+        marker_f7d0ff30b5b14b0c848c801adc0300a8.bindPopup(popup_a13819bf23684d0f942f241f8f8b3135)
+        ;
+
+        
+    
+    
+            var marker_9c0bcf7df15d41438271242dc75501a6 = L.marker(
+                [50.632366, 3.062313],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_b088ee08458242fabe57d9c6624d6ab3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9c0bcf7df15d41438271242dc75501a6.setIcon(icon_b088ee08458242fabe57d9c6624d6ab3);
+        
+    
+        var popup_42af3dcee27740e2a441db3d05825577 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93ca42e15f8347e3b7d378bd20854956 = $(`<div id="html_93ca42e15f8347e3b7d378bd20854956" style="width: 100.0%; height: 100.0%;"><strong>PLACE RICHEBE</strong></div>`)[0];
+            popup_42af3dcee27740e2a441db3d05825577.setContent(html_93ca42e15f8347e3b7d378bd20854956);
+        
+
+        marker_9c0bcf7df15d41438271242dc75501a6.bindPopup(popup_42af3dcee27740e2a441db3d05825577)
+        ;
+
+        
+    
+    
+            var marker_a266726c9da34071a0b6b30deb2f3d6f = L.marker(
+                [50.63268, 3.052483],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_bf1de86f81e24f7fbed3fb2adf6d2d35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a266726c9da34071a0b6b30deb2f3d6f.setIcon(icon_bf1de86f81e24f7fbed3fb2adf6d2d35);
+        
+    
+        var popup_ea8880f57f2e4736900ec98b62a6349a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f74a2e710bdf4c3c8a77d40060ba95e4 = $(`<div id="html_f74a2e710bdf4c3c8a77d40060ba95e4" style="width: 100.0%; height: 100.0%;"><strong>SOLFERINO NATIONALE</strong></div>`)[0];
+            popup_ea8880f57f2e4736900ec98b62a6349a.setContent(html_f74a2e710bdf4c3c8a77d40060ba95e4);
+        
+
+        marker_a266726c9da34071a0b6b30deb2f3d6f.bindPopup(popup_ea8880f57f2e4736900ec98b62a6349a)
+        ;
+
+        
+    
+    
+            var marker_e99b32ce5ce747f6ae0f158661dc7fdd = L.marker(
+                [50.62614, 3.051729],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_75d016745890436f9eb929948912ccd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e99b32ce5ce747f6ae0f158661dc7fdd.setIcon(icon_75d016745890436f9eb929948912ccd6);
+        
+    
+        var popup_db347e83b8ab464d9d0d7f593479805b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c31cad515ae7471f9486db2c9cdd1d5c = $(`<div id="html_c31cad515ae7471f9486db2c9cdd1d5c" style="width: 100.0%; height: 100.0%;"><strong>METRO GAMBETTA</strong></div>`)[0];
+            popup_db347e83b8ab464d9d0d7f593479805b.setContent(html_c31cad515ae7471f9486db2c9cdd1d5c);
+        
+
+        marker_e99b32ce5ce747f6ae0f158661dc7fdd.bindPopup(popup_db347e83b8ab464d9d0d7f593479805b)
+        ;
+
+        
+    
+    
+            var marker_904400d6fc2f471ab861e2f883697ec3 = L.marker(
+                [50.633728, 3.055307],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_3cf873ed9cf846b7af9d6b8ad931cfd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_904400d6fc2f471ab861e2f883697ec3.setIcon(icon_3cf873ed9cf846b7af9d6b8ad931cfd6);
+        
+    
+        var popup_60268fbaf59642d3aa416f059e089302 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5326997323264d4481c81a55775221a3 = $(`<div id="html_5326997323264d4481c81a55775221a3" style="width: 100.0%; height: 100.0%;"><strong>PLACE DE STRASBOURG</strong></div>`)[0];
+            popup_60268fbaf59642d3aa416f059e089302.setContent(html_5326997323264d4481c81a55775221a3);
+        
+
+        marker_904400d6fc2f471ab861e2f883697ec3.bindPopup(popup_60268fbaf59642d3aa416f059e089302)
+        ;
+
+        
+    
+    
+            var marker_4afe362b39a14a19b2ebb6e5566f534d = L.marker(
+                [50.627674, 3.050173],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_2e80e3a16b0f4d1c9e62fe1f404e853a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4afe362b39a14a19b2ebb6e5566f534d.setIcon(icon_2e80e3a16b0f4d1c9e62fe1f404e853a);
+        
+    
+        var popup_0c2ba864b96b420bbdef2670b3f34c10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3c5d90f579a4c808dbe6e57d0e5180d = $(`<div id="html_e3c5d90f579a4c808dbe6e57d0e5180d" style="width: 100.0%; height: 100.0%;"><strong>MARCHE DE WAZEMMES</strong></div>`)[0];
+            popup_0c2ba864b96b420bbdef2670b3f34c10.setContent(html_e3c5d90f579a4c808dbe6e57d0e5180d);
+        
+
+        marker_4afe362b39a14a19b2ebb6e5566f534d.bindPopup(popup_0c2ba864b96b420bbdef2670b3f34c10)
+        ;
+
+        
+    
+    
+            var marker_f082f2d4971743cf90be3e2e29453f5d = L.marker(
+                [50.628544, 3.065015],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_df772ff9d54d41ae844e70af829597e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f082f2d4971743cf90be3e2e29453f5d.setIcon(icon_df772ff9d54d41ae844e70af829597e6);
+        
+    
+        var popup_0b9a7fedcc104fcb8aad011c8c09452e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2522b11b6d95450888061c1c6a31a45a = $(`<div id="html_2522b11b6d95450888061c1c6a31a45a" style="width: 100.0%; height: 100.0%;"><strong>ANGELLIER</strong></div>`)[0];
+            popup_0b9a7fedcc104fcb8aad011c8c09452e.setContent(html_2522b11b6d95450888061c1c6a31a45a);
+        
+
+        marker_f082f2d4971743cf90be3e2e29453f5d.bindPopup(popup_0b9a7fedcc104fcb8aad011c8c09452e)
+        ;
+
+        
+    
+    
+            var marker_a879900f4bc94e96948120c8c95d274e = L.marker(
+                [50.62418, 3.058902],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_727c701c74184ab983790f623cf6f8f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a879900f4bc94e96948120c8c95d274e.setIcon(icon_727c701c74184ab983790f623cf6f8f7);
+        
+    
+        var popup_30c45875d2ce4691b229b6d576e0a45d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af653b595b1b4aa286f2f82078e77f62 = $(`<div id="html_af653b595b1b4aa286f2f82078e77f62" style="width: 100.0%; height: 100.0%;"><strong>BARTHELEMY DELESPAUL</strong></div>`)[0];
+            popup_30c45875d2ce4691b229b6d576e0a45d.setContent(html_af653b595b1b4aa286f2f82078e77f62);
+        
+
+        marker_a879900f4bc94e96948120c8c95d274e.bindPopup(popup_30c45875d2ce4691b229b6d576e0a45d)
+        ;
+
+        
+    
+    
+            var marker_35b6673be8c847529e60baa399fdaad4 = L.marker(
+                [50.63393, 3.061687],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_bafd592db90e4e36957ab7a91f9b4b5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_35b6673be8c847529e60baa399fdaad4.setIcon(icon_bafd592db90e4e36957ab7a91f9b4b5e);
+        
+    
+        var popup_23596a4b0a044725bccadff3befe43bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36096cb109c340a189af891c80800e6d = $(`<div id="html_36096cb109c340a189af891c80800e6d" style="width: 100.0%; height: 100.0%;"><strong>HOPITAL MILITAIRE</strong></div>`)[0];
+            popup_23596a4b0a044725bccadff3befe43bb.setContent(html_36096cb109c340a189af891c80800e6d);
+        
+
+        marker_35b6673be8c847529e60baa399fdaad4.bindPopup(popup_23596a4b0a044725bccadff3befe43bb)
+        ;
+
+        
+    
+    
+            var marker_e238831a55d94bd39305c106080c60bb = L.marker(
+                [50.635082, 3.058015],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_35f1ac0c166d45d5816d63756fd79969 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e238831a55d94bd39305c106080c60bb.setIcon(icon_35f1ac0c166d45d5816d63756fd79969);
+        
+    
+        var popup_5bf9d43058e0409b8313a86890d0aaa2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b106cdf2038a4a3eaf8249f21d1dfff7 = $(`<div id="html_b106cdf2038a4a3eaf8249f21d1dfff7" style="width: 100.0%; height: 100.0%;"><strong>RUE NATIONALE</strong></div>`)[0];
+            popup_5bf9d43058e0409b8313a86890d0aaa2.setContent(html_b106cdf2038a4a3eaf8249f21d1dfff7);
+        
+
+        marker_e238831a55d94bd39305c106080c60bb.bindPopup(popup_5bf9d43058e0409b8313a86890d0aaa2)
+        ;
+
+        
+    
+    
+            var marker_e32c80f082d5407982a4c07c17f84a83 = L.marker(
+                [50.630836, 3.047778],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_c0e6802a5b4d4b91bb844da580d11755 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e32c80f082d5407982a4c07c17f84a83.setIcon(icon_c0e6802a5b4d4b91bb844da580d11755);
+        
+    
+        var popup_14104de0cea04eefae88a3d8bde32c5e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fcc65e8042b945a4ad9d4cd154d08c5d = $(`<div id="html_fcc65e8042b945a4ad9d4cd154d08c5d" style="width: 100.0%; height: 100.0%;"><strong>NATIONALE RUE DU PORT</strong></div>`)[0];
+            popup_14104de0cea04eefae88a3d8bde32c5e.setContent(html_fcc65e8042b945a4ad9d4cd154d08c5d);
+        
+
+        marker_e32c80f082d5407982a4c07c17f84a83.bindPopup(popup_14104de0cea04eefae88a3d8bde32c5e)
+        ;
+
+        
+    
+    
+            var marker_638cbf4c73d643b58e7783632855b8c3 = L.marker(
+                [50.63237, 3.066273],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_24f331f35e1f40ccb4976bbad4b4e6ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_638cbf4c73d643b58e7783632855b8c3.setIcon(icon_24f331f35e1f40ccb4976bbad4b4e6ee);
+        
+    
+        var popup_04cc48c547c947409ece7b970d7b3e4f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5b3455019604540a0cddf827803deca = $(`<div id="html_c5b3455019604540a0cddf827803deca" style="width: 100.0%; height: 100.0%;"><strong>DELESALLE MEDIATHEQUE</strong></div>`)[0];
+            popup_04cc48c547c947409ece7b970d7b3e4f.setContent(html_c5b3455019604540a0cddf827803deca);
+        
+
+        marker_638cbf4c73d643b58e7783632855b8c3.bindPopup(popup_04cc48c547c947409ece7b970d7b3e4f)
+        ;
+
+        
+    
+    
+            var marker_ec53f9df36cb4388b3fc30e9f3cb4f3e = L.marker(
+                [50.62338, 3.051565],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_699dc97c220f48b0938296c9bfe0dc58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ec53f9df36cb4388b3fc30e9f3cb4f3e.setIcon(icon_699dc97c220f48b0938296c9bfe0dc58);
+        
+    
+        var popup_332331723de6412b8e10935eabcde4d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_acd7f1bef145456eae24f5bbd75e24e1 = $(`<div id="html_acd7f1bef145456eae24f5bbd75e24e1" style="width: 100.0%; height: 100.0%;"><strong>METRO WAZEMMES</strong></div>`)[0];
+            popup_332331723de6412b8e10935eabcde4d6.setContent(html_acd7f1bef145456eae24f5bbd75e24e1);
+        
+
+        marker_ec53f9df36cb4388b3fc30e9f3cb4f3e.bindPopup(popup_332331723de6412b8e10935eabcde4d6)
+        ;
+
+        
+    
+    
+            var marker_31039249c67e4eadb118309528053821 = L.marker(
+                [50.624695, 3.048961],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_d337d69fa6c9430ea6e7026404f5174e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_31039249c67e4eadb118309528053821.setIcon(icon_d337d69fa6c9430ea6e7026404f5174e);
+        
+    
+        var popup_60dcab79d1c94ec4a5151cae875df45b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7c59cd26e9949a9ae408e5b1db2a887 = $(`<div id="html_c7c59cd26e9949a9ae408e5b1db2a887" style="width: 100.0%; height: 100.0%;"><strong>MAISON FOLIE WAZEMMES</strong></div>`)[0];
+            popup_60dcab79d1c94ec4a5151cae875df45b.setContent(html_c7c59cd26e9949a9ae408e5b1db2a887);
+        
+
+        marker_31039249c67e4eadb118309528053821.bindPopup(popup_60dcab79d1c94ec4a5151cae875df45b)
+        ;
+
+        
+    
+    
+            var marker_0caee47dfc01424d8bcb5b54a1bf7fdf = L.marker(
+                [50.63589, 3.062471],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_c4471229a27f49cdb161c07c8fa19deb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0caee47dfc01424d8bcb5b54a1bf7fdf.setIcon(icon_c4471229a27f49cdb161c07c8fa19deb);
+        
+    
+        var popup_0175d32af22a4c0ab51e239b7b40e2d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20d6c11c00ac47d3b284596f73ed8985 = $(`<div id="html_20d6c11c00ac47d3b284596f73ed8985" style="width: 100.0%; height: 100.0%;"><strong>RIHOUR</strong></div>`)[0];
+            popup_0175d32af22a4c0ab51e239b7b40e2d7.setContent(html_20d6c11c00ac47d3b284596f73ed8985);
+        
+
+        marker_0caee47dfc01424d8bcb5b54a1bf7fdf.bindPopup(popup_0175d32af22a4c0ab51e239b7b40e2d7)
+        ;
+
+        
+    
+    
+            var marker_0491e54660914a89925d2a450a8a2b00 = L.marker(
+                [50.635014, 3.064802],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_db90831be705410d8912fcc35a7ff8a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0491e54660914a89925d2a450a8a2b00.setIcon(icon_db90831be705410d8912fcc35a7ff8a1);
+        
+    
+        var popup_61638bc209784534873347a37701b05a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b47c366d936b4a88be7a347ec397902f = $(`<div id="html_b47c366d936b4a88be7a347ec397902f" style="width: 100.0%; height: 100.0%;"><strong>TANNEURS</strong></div>`)[0];
+            popup_61638bc209784534873347a37701b05a.setContent(html_b47c366d936b4a88be7a347ec397902f);
+        
+
+        marker_0491e54660914a89925d2a450a8a2b00.bindPopup(popup_61638bc209784534873347a37701b05a)
+        ;
+
+        
+    
+    
+            var marker_0bfe6551877b4e6f94acc02e8b899ec8 = L.marker(
+                [50.62824, 3.069233],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_4987475a442a42f4b94da100f94b57a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0bfe6551877b4e6f94acc02e8b899ec8.setIcon(icon_4987475a442a42f4b94da100f94b57a6);
+        
+    
+        var popup_94055dc9215740b393726a97537e2fcf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d2c6d460b584bdd8f965112e9e7ae54 = $(`<div id="html_0d2c6d460b584bdd8f965112e9e7ae54" style="width: 100.0%; height: 100.0%;"><strong>BOULEVARD LOUIS XIV</strong></div>`)[0];
+            popup_94055dc9215740b393726a97537e2fcf.setContent(html_0d2c6d460b584bdd8f965112e9e7ae54);
+        
+
+        marker_0bfe6551877b4e6f94acc02e8b899ec8.bindPopup(popup_94055dc9215740b393726a97537e2fcf)
+        ;
+
+        
+    
+    
+            var marker_e0568422149240069784259bb2542363 = L.marker(
+                [50.62184, 3.060494],
+                {}
+            ).addTo(map_02435b8eb1814eaa90cd2102dcd4d4ae);
+        
+    
+            var icon_4cbd5d377bcc416d8b394696739686b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e0568422149240069784259bb2542363.setIcon(icon_4cbd5d377bcc416d8b394696739686b2);
+        
+    
+        var popup_c19c57e8c008466f867909f779856a54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fdeba980098c42e28188e1e137cb9ace = $(`<div id="html_fdeba980098c42e28188e1e137cb9ace" style="width: 100.0%; height: 100.0%;"><strong>GANTOIS</strong></div>`)[0];
+            popup_c19c57e8c008466f867909f779856a54.setContent(html_fdeba980098c42e28188e1e137cb9ace);
+        
+
+        marker_e0568422149240069784259bb2542363.bindPopup(popup_c19c57e8c008466f867909f779856a54)
+        ;
+
+        
+    
+</script>
