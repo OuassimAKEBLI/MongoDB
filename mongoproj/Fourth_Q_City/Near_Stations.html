@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_57ce243a24874c859f503e1b11a06c72 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_57ce243a24874c859f503e1b11a06c72" ></div>
+        
+</body>
+<script>    
+    
+            var map_57ce243a24874c859f503e1b11a06c72 = L.map(
+                "map_57ce243a24874c859f503e1b11a06c72",
+                {
+                    center: [50.612635, 3.059261],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_66f2fbd3af644d65a6271795ab941005 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_57ce243a24874c859f503e1b11a06c72);
+        
+    
+            var marker_6bf64f4f706f40068e77d380af1efdd2 = L.marker(
+                [50.612635, 3.059261],
+                {}
+            ).addTo(map_57ce243a24874c859f503e1b11a06c72);
+        
+    
+            var icon_7743b018c9dd4c52b986c5613f5288dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6bf64f4f706f40068e77d380af1efdd2.setIcon(icon_7743b018c9dd4c52b986c5613f5288dd);
+        
+    
+        var popup_fcf2ba3354a04675b07ce7bb30f8c8ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bdfe202b3200408ab3c225cf2fc7913c = $(`<div id="html_bdfe202b3200408ab3c225cf2fc7913c" style="width: 100.0%; height: 100.0%;"><strong>User Position</strong></div>`)[0];
+            popup_fcf2ba3354a04675b07ce7bb30f8c8ae.setContent(html_bdfe202b3200408ab3c225cf2fc7913c);
+        
+
+        marker_6bf64f4f706f40068e77d380af1efdd2.bindPopup(popup_fcf2ba3354a04675b07ce7bb30f8c8ae)
+        ;
+
+        
+    
+    
+            var marker_032788ce81fa4a6eb8265321a7141abe = L.marker(
+                [50.612635, 3.059261],
+                {}
+            ).addTo(map_57ce243a24874c859f503e1b11a06c72);
+        
+    
+            var icon_839d6ab43d7e4146b89e3ab18c3e1d8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_032788ce81fa4a6eb8265321a7141abe.setIcon(icon_839d6ab43d7e4146b89e3ab18c3e1d8f);
+        
+    
+        var popup_ab7a60eed82143d09893f4b846715bc6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb591279c1ff46be9226c46f2603ca04 = $(`<div id="html_bb591279c1ff46be9226c46f2603ca04" style="width: 100.0%; height: 100.0%;"><strong>PLACE DE LA GARONNE</strong></div>`)[0];
+            popup_ab7a60eed82143d09893f4b846715bc6.setContent(html_bb591279c1ff46be9226c46f2603ca04);
+        
+
+        marker_032788ce81fa4a6eb8265321a7141abe.bindPopup(popup_ab7a60eed82143d09893f4b846715bc6)
+        ;
+
+        
+    
+    
+            var marker_f16fc415fb34496885e19d0a065376ab = L.marker(
+                [50.614052, 3.062195],
+                {}
+            ).addTo(map_57ce243a24874c859f503e1b11a06c72);
+        
+    
+            var icon_cea0f7eb5a214072a3a620a1324dbcfd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f16fc415fb34496885e19d0a065376ab.setIcon(icon_cea0f7eb5a214072a3a620a1324dbcfd);
+        
+    
+        var popup_0fbb12f661734fb9883e3834a6f34cad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2fb52faff9e4e6c84457c530ec5c8f0 = $(`<div id="html_a2fb52faff9e4e6c84457c530ec5c8f0" style="width: 100.0%; height: 100.0%;"><strong>FAUBOURG D'ARRAS</strong></div>`)[0];
+            popup_0fbb12f661734fb9883e3834a6f34cad.setContent(html_a2fb52faff9e4e6c84457c530ec5c8f0);
+        
+
+        marker_f16fc415fb34496885e19d0a065376ab.bindPopup(popup_0fbb12f661734fb9883e3834a6f34cad)
+        ;
+
+        
+    
+    
+            var marker_8f1fbcd25c9740f289600e43d336cd51 = L.marker(
+                [50.610582, 3.065103],
+                {}
+            ).addTo(map_57ce243a24874c859f503e1b11a06c72);
+        
+    
+            var icon_40210bdbbdb74a6a8d1ff3124dc62833 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8f1fbcd25c9740f289600e43d336cd51.setIcon(icon_40210bdbbdb74a6a8d1ff3124dc62833);
+        
+    
+        var popup_30f18165ee7244449f49f916bd0d2f6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59f2fea9479344daaef55675751b2848 = $(`<div id="html_59f2fea9479344daaef55675751b2848" style="width: 100.0%; height: 100.0%;"><strong>CHEMIN ROUGE</strong></div>`)[0];
+            popup_30f18165ee7244449f49f916bd0d2f6b.setContent(html_59f2fea9479344daaef55675751b2848);
+        
+
+        marker_8f1fbcd25c9740f289600e43d336cd51.bindPopup(popup_30f18165ee7244449f49f916bd0d2f6b)
+        ;
+
+        
+    
+    
+            var marker_65067d0e22dc4b06a8b2b4ebee1f2653 = L.marker(
+                [50.617847, 3.061758],
+                {}
+            ).addTo(map_57ce243a24874c859f503e1b11a06c72);
+        
+    
+            var icon_0451d3582c804701b048945557d35d5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_65067d0e22dc4b06a8b2b4ebee1f2653.setIcon(icon_0451d3582c804701b048945557d35d5e);
+        
+    
+        var popup_29933cdf0b41413bba6d10017430cc7b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_34d37b2683a642fba5ea1426c0d64889 = $(`<div id="html_34d37b2683a642fba5ea1426c0d64889" style="width: 100.0%; height: 100.0%;"><strong>PORTE D'ARRAS</strong></div>`)[0];
+            popup_29933cdf0b41413bba6d10017430cc7b.setContent(html_34d37b2683a642fba5ea1426c0d64889);
+        
+
+        marker_65067d0e22dc4b06a8b2b4ebee1f2653.bindPopup(popup_29933cdf0b41413bba6d10017430cc7b)
+        ;
+
+        
+    
+    
+            var marker_5d3c4ccd4d7f4f8ab934cc9f6df9d22e = L.marker(
+                [50.615536, 3.048518],
+                {}
+            ).addTo(map_57ce243a24874c859f503e1b11a06c72);
+        
+    
+            var icon_42b21eae381c46038fce90e66bf95232 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5d3c4ccd4d7f4f8ab934cc9f6df9d22e.setIcon(icon_42b21eae381c46038fce90e66bf95232);
+        
+    
+        var popup_f9fccfc3db6b48858e62523074da3d7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_897e4c7f297a4dee97394d3b167a0fff = $(`<div id="html_897e4c7f297a4dee97394d3b167a0fff" style="width: 100.0%; height: 100.0%;"><strong>HOTEL DE POLICE</strong></div>`)[0];
+            popup_f9fccfc3db6b48858e62523074da3d7d.setContent(html_897e4c7f297a4dee97394d3b167a0fff);
+        
+
+        marker_5d3c4ccd4d7f4f8ab934cc9f6df9d22e.bindPopup(popup_f9fccfc3db6b48858e62523074da3d7d)
+        ;
+
+        
+    
+</script>

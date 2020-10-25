@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_afd4ac52018e4d1db73629309764f2be {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_afd4ac52018e4d1db73629309764f2be" ></div>
+        
+</body>
+<script>    
+    
+            var map_afd4ac52018e4d1db73629309764f2be = L.map(
+                "map_afd4ac52018e4d1db73629309764f2be",
+                {
+                    center: [50.6292, 3.0573],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_79054e0dbeb24219b4c3fa352afe4a79 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_afd4ac52018e4d1db73629309764f2be);
+        
+    
+            var marker_3111ec75bd5a4a13baa94b45d5c3e9e1 = L.marker(
+                [50.6292, 3.0573],
+                {}
+            ).addTo(map_afd4ac52018e4d1db73629309764f2be);
+        
+    
+            var icon_bbd8b831054a414190c901a7ad322dad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3111ec75bd5a4a13baa94b45d5c3e9e1.setIcon(icon_bbd8b831054a414190c901a7ad322dad);
+        
+    
+        var popup_2505641d227342ff8fb36e4636214d9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72f4e41b253c4a39acbd7e11dd54d39a = $(`<div id="html_72f4e41b253c4a39acbd7e11dd54d39a" style="width: 100.0%; height: 100.0%;"><strong>User Position</strong></div>`)[0];
+            popup_2505641d227342ff8fb36e4636214d9a.setContent(html_72f4e41b253c4a39acbd7e11dd54d39a);
+        
+
+        marker_3111ec75bd5a4a13baa94b45d5c3e9e1.bindPopup(popup_2505641d227342ff8fb36e4636214d9a)
+        ;
+
+        
+    
+    
+            var marker_3823890857bc4751a0f08099dc23dcf4 = L.marker(
+                [50.629044, 3.058288],
+                {}
+            ).addTo(map_afd4ac52018e4d1db73629309764f2be);
+        
+    
+            var icon_bab577cfdef740e989e73901fadaf8c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3823890857bc4751a0f08099dc23dcf4.setIcon(icon_bab577cfdef740e989e73901fadaf8c9);
+        
+    
+        var popup_21d790bfaad7404ca41b6e40741c7bd0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d57b1680ae24189879a3c437fc636ed = $(`<div id="html_9d57b1680ae24189879a3c437fc636ed" style="width: 100.0%; height: 100.0%;"><strong>THEATRE SEBASTOPOL</strong></div>`)[0];
+            popup_21d790bfaad7404ca41b6e40741c7bd0.setContent(html_9d57b1680ae24189879a3c437fc636ed);
+        
+
+        marker_3823890857bc4751a0f08099dc23dcf4.bindPopup(popup_21d790bfaad7404ca41b6e40741c7bd0)
+        ;
+
+        
+    
+    
+            var marker_2ef94ebfc981457a8eac194f0aa2d054 = L.marker(
+                [50.629063, 3.053711],
+                {}
+            ).addTo(map_afd4ac52018e4d1db73629309764f2be);
+        
+    
+            var icon_e551e3bbb2b2459ca57a78b32a4dee2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2ef94ebfc981457a8eac194f0aa2d054.setIcon(icon_e551e3bbb2b2459ca57a78b32a4dee2b);
+        
+    
+        var popup_06482f241c404a17a6253763256d24b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_797ccf14e059447195c0c26bbb82f706 = $(`<div id="html_797ccf14e059447195c0c26bbb82f706" style="width: 100.0%; height: 100.0%;"><strong>GAMBETTA UTRECHT</strong></div>`)[0];
+            popup_06482f241c404a17a6253763256d24b1.setContent(html_797ccf14e059447195c0c26bbb82f706);
+        
+
+        marker_2ef94ebfc981457a8eac194f0aa2d054.bindPopup(popup_06482f241c404a17a6253763256d24b1)
+        ;
+
+        
+    
+    
+            var marker_36985c3973a34a6b9615764112b4583a = L.marker(
+                [50.630943, 3.060299],
+                {}
+            ).addTo(map_afd4ac52018e4d1db73629309764f2be);
+        
+    
+            var icon_873af0751912446382d7b92c27f3d474 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_36985c3973a34a6b9615764112b4583a.setIcon(icon_873af0751912446382d7b92c27f3d474);
+        
+    
+        var popup_0b5e96f9300f49399c9cb5826ee8c467 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_230c8f4b20cc47fea7f2b0733c004e80 = $(`<div id="html_230c8f4b20cc47fea7f2b0733c004e80" style="width: 100.0%; height: 100.0%;"><strong>REPUBLIQUE BEAUX ARTS</strong></div>`)[0];
+            popup_0b5e96f9300f49399c9cb5826ee8c467.setContent(html_230c8f4b20cc47fea7f2b0733c004e80);
+        
+
+        marker_36985c3973a34a6b9615764112b4583a.bindPopup(popup_0b5e96f9300f49399c9cb5826ee8c467)
+        ;
+
+        
+    
+    
+            var marker_1690c68965e842ac80d40f8d0dfabc97 = L.marker(
+                [50.62648, 3.056666],
+                {}
+            ).addTo(map_afd4ac52018e4d1db73629309764f2be);
+        
+    
+            var icon_3335170fe30a46daa81e18d0efbbb027 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1690c68965e842ac80d40f8d0dfabc97.setIcon(icon_3335170fe30a46daa81e18d0efbbb027);
+        
+    
+        var popup_5a24a8910bf64baebbc0b8f45d26e869 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93d4b8947cce4b219b30d1d4df10bcda = $(`<div id="html_93d4b8947cce4b219b30d1d4df10bcda" style="width: 100.0%; height: 100.0%;"><strong>BRULE MAISON</strong></div>`)[0];
+            popup_5a24a8910bf64baebbc0b8f45d26e869.setContent(html_93d4b8947cce4b219b30d1d4df10bcda);
+        
+
+        marker_1690c68965e842ac80d40f8d0dfabc97.bindPopup(popup_5a24a8910bf64baebbc0b8f45d26e869)
+        ;
+
+        
+    
+    
+            var marker_9ed8f15f39df41ea9319be8fb4cefec9 = L.marker(
+                [50.63156, 3.054738],
+                {}
+            ).addTo(map_afd4ac52018e4d1db73629309764f2be);
+        
+    
+            var icon_5cae940715b24a90a519279f56c38447 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9ed8f15f39df41ea9319be8fb4cefec9.setIcon(icon_5cae940715b24a90a519279f56c38447);
+        
+    
+        var popup_954a22bd7e5d482f99262cc264a4a2b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a770c683f89a4ec4868a204f8195db3d = $(`<div id="html_a770c683f89a4ec4868a204f8195db3d" style="width: 100.0%; height: 100.0%;"><strong>MASSENA</strong></div>`)[0];
+            popup_954a22bd7e5d482f99262cc264a4a2b7.setContent(html_a770c683f89a4ec4868a204f8195db3d);
+        
+
+        marker_9ed8f15f39df41ea9319be8fb4cefec9.bindPopup(popup_954a22bd7e5d482f99262cc264a4a2b7)
+        ;
+
+        
+    
+    
+            var marker_462a007baaf245c380c07326531c6351 = L.marker(
+                [50.632367, 3.05816],
+                {}
+            ).addTo(map_afd4ac52018e4d1db73629309764f2be);
+        
+    
+            var icon_de1dda57c9cd468e89be0a12903a7ce3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_462a007baaf245c380c07326531c6351.setIcon(icon_de1dda57c9cd468e89be0a12903a7ce3);
+        
+    
+        var popup_ba5d58bc45bc410490ee28c3e332f843 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3237945a48e481caccfa7de59b32ef2 = $(`<div id="html_f3237945a48e481caccfa7de59b32ef2" style="width: 100.0%; height: 100.0%;"><strong>JEAN SANS PEUR</strong></div>`)[0];
+            popup_ba5d58bc45bc410490ee28c3e332f843.setContent(html_f3237945a48e481caccfa7de59b32ef2);
+        
+
+        marker_462a007baaf245c380c07326531c6351.bindPopup(popup_ba5d58bc45bc410490ee28c3e332f843)
+        ;
+
+        
+    
+</script>
